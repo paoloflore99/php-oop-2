@@ -1,5 +1,31 @@
 [
     {
-        
+        "immagine" : "https://animaloutlet.it/wp-content/uploads/2023/04/Cuccia-Rilassante-a-Forma-di-Zampa-Labrador.jpg",
+        "descrizione" : "cuccia per cane morbida e avvolgente"
+    },
+
+    {
+        "immagine" : "https://medias.ultrapremiumdirect.com/italy/production/catalog/products/001010/1.jpg?tr=q-50,w-554,h-554&v=-1690500536",
+        "descrizione" : "croccantini gustosi"
+    },
+
+    {
+        "immagine" : "https://www.animaliapet.it/immagini/ecommerce/pneumatico-21.jpg",
+        "descrizione" : "gioco per cane"
+    },
+
+    {
+        "immagine" : "https://www.gros.it/photo/2020/04/05/e/scancube_001/photo/000201451_scancubefoto0001.jpg",
+        "descrizione" : "croccantini gustosi"
+    },
+
+    {
+        "immagine" : "https://www.minellisrl.eu/1110-large_default/cuccia-per-gatto-in-vimini-con-cuscino-simple-day.jpg",
+        "descrizione" : "cuccia per gatto , interno morbida e esterno in legno"
+    },
+
+    {
+        "immagine" : "https://arcaplanet.vtexassets.com/arquivos/ids/266266/yes-gioco-con-pallina-per-gatti-intelligenza.jpg?v=1781223577",
+        "descrizione" : "gioco per gatto"
     }
 ]
