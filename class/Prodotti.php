@@ -12,7 +12,7 @@ class Prodotti {
         $this->immagine = $immagine;
         $this->titolo = $titolo;
         $this->prezzo = $prezzo;
-        $this->$categoria = $categoria;
+        $this->categoria = $categoria;
     }
 
     /**
