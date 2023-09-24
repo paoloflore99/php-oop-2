@@ -9,8 +9,25 @@ require_once __DIR__ . '/class/Prodotti.php';
 
 // throw new Exception('Is not a number');
 
-$animali = json_decode(file_get_contents('./js/store-shop.json'));
-// var_dump($animali);
+// $animali = json_decode(file_get_contents('./js/store-shop.json'));
+
+$categoriaCuccia1 =  new Categoria("Cuccia");
+$categoriaCuccia2 =  new Categoria("Cuccia");
+
+$Cuccia1 = new Cuccia(
+    "https://animaloutlet.it/wp-content/uploads/2023/04/Cuccia-Rilassante-a-Forma-di-Zampa-Labrador.jpg",
+    "cuccia per cane morbida e avvolgente" ,
+    "39.99" ,
+    $categoriaCuccia1);
+
+
+$Cuccia2 = new Cuccia(
+    "https://www.minellisrl.eu/1110-large_default/cuccia-per-gatto-in-vimini-con-cuscino-simple-day.jpg",
+    "cuccia per gatto morbida e fuori in legno" ,
+    "59.99" ,
+    $categoriaCuccia1);
+
+    $cuccie = [$Cuccia1,$Cuccia2]
 ?>
 
 <head>
@@ -73,12 +90,12 @@ $animali = json_decode(file_get_contents('./js/store-shop.json'));
 
     <div class="container">
         <div class="row">
-            <?php foreach ($animali as $animale) {?>
+            <?php foreach ($cuccie as $cuccia) {?>
                 <div class="card" style="width: 18rem;">
-                    <img src="<?php echo $animale -> immagine  ?>" class="card-img-top" alt="...">
+                    <img src="<?php echo $cuccia -> getImmagine() ?>" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title "><?php echo $animale ->descrizione ?></h5>
-                        <p class="card-text"></p>
+                        <h5 class="card-title "><?php echo $cuccia ->getTitolo() ?></h5>
+                        <p class="card-text"><?php echo $cuccia ->getPrezzo() ?></p>
                     </div>
                 </div>
             <?php } ?>
