@@ -32,21 +32,35 @@ class Cuccia extends Prodotti {
     }
 }
 
-// Creiamo un'istanza di Categoria
 $categoriaCuccia = new Categoria("Cuccia");
 
-// Creiamo un'istanza di Cuccia con dati appropriati
 $cuccia = new Cuccia(
-    "https://animaloutlet.it/wp-content/uploads/2023/04/Cuccia-Rilassante-a-Forma-di-Zampa-Labrador.jpg",
+    "https://animaloutlet.it/wp-content/uploads/2023/04/Cuccia-Rilassante-a-Forma-di-Zampa-Labrador.",
     "Cuccia per cane morbida e avvolgente",
     49.99,
     $categoriaCuccia
 );
 
-// Chiamiamo il metodo per stampare i dettagli
+
 $cuccia->stampaDettagliata();
 
+$categoriaCuccia1 =  new Categoria("Cuccia");
+$categoriaCuccia2 =  new Categoria("Cuccia");
 
+$Cuccia1 = new Cuccia(
+    "https://animaloutlet.it/wp-content/uploads/2023/04/Cuccia-Rilassante-a-Forma-di-Zampa-Labrador.jpg",
+    "cuccia per cane morbida e avvolgente" ,
+    "39.99" ,
+    $categoriaCuccia1);
+
+
+$Cuccia2 = new Cuccia(
+    "https://www.minellisrl.eu/1110-large_default/cuccia-per-gatto-in-vimini-con-cuscino-simple-day.jpg",
+    "cuccia per gatto morbida e fuori in legno" ,
+    "59.99" ,
+    $categoriaCuccia1);
+
+    $cuccie = [$Cuccia1,$Cuccia2]
 
 
 ?>
