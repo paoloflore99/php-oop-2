@@ -10,7 +10,10 @@ class Cibo extends Prodotti{
     }
 
     public function STampaDEtagliata() {
-
+        echo "Immagine: " . $this->getImmagine() . "<br>";
+        echo "Titolo: " . $this->getTitolo() . "<br>";
+        echo "Prezzo: " . $this->getPrezzo() . "<br>";
+        echo "Categoria: " . $this->getCategoria()->getNome() . "<br>";
     }
 
 };

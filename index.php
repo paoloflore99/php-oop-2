@@ -84,7 +84,7 @@ require_once __DIR__ . '/class/Prodotti.php';
                 </div>
             <?php } ?>
 
-<div></div>
+
 
             <?php foreach ($giochi as $gioco) {?>
                 <div class="card" style="width: 18rem;">
