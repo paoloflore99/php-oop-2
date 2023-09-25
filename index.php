@@ -66,8 +66,6 @@ require_once __DIR__ . '/class/Prodotti.php';
                 </ul>
             </div>
         </div>
-
-
     </nav>
 
 
@@ -86,9 +84,15 @@ require_once __DIR__ . '/class/Prodotti.php';
 
 
 
-
-
-
+            <?php foreach ($giochi as $gioco) {?>
+                <div class="card" style="width: 18rem;">
+                    <img src="<?php echo $gioco -> getImmagine() ?>" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title "><?php echo $gioco ->getTitolo() ?></h5>
+                        <p class="card-text"><?php echo $gioco ->getPrezzo() ?></p>
+                    </div>
+                </div>
+            <?php } ?>
 
         </div>
     </div>
